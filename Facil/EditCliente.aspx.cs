@@ -13,5 +13,36 @@ namespace Facil
         {
 
         }
+
+        protected void btnSalvar_Click(object sender, EventArgs e)
+        {
+            string nome = txNome.Text;
+            string cpf = txCpf.Text;
+
+            int tipoCliente = 0;
+            if (!String.IsNullOrEmpty(ddlTipoCliente.SelectedValue))
+            {
+                tipoCliente = Convert.ToInt32(ddlTipoCliente.SelectedValue);
+            }
+
+            string sexo = ddlSexo.SelectedValue;
+
+            int situacaoCliente = 0;
+            if (!String.IsNullOrEmpty(ddlSituacaoCliente.SelectedValue))
+            {
+                situacaoCliente = Convert.ToInt32(ddlSituacaoCliente.SelectedValue);
+            }
+
+            try
+            {
+                new ClienteServiceReference.Cliente_ServiceClient().InserirCliente(nome, cpf, tipoCliente, sexo, situacaoCliente);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            Response.Redirect("TabelaClientes.aspx");
+        }
     }
 }

@@ -56,7 +56,13 @@ namespace Facil
                 myTable.Rows.Add(row);
             }
         }
+
         protected void btnNovoCliente_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditCliente.aspx");
+        }
+
+        protected void btnEditar_Click(object sender, EventArgs e)
         {
             Response.Redirect("EditCliente.aspx");
         }

@@ -62,9 +62,6 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>Criado Por: Vitor Pereira</p>
-            </footer>
         </div>
 
     </form>

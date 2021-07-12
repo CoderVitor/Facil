@@ -9,6 +9,7 @@
 
     <div class="row">
         <asp:Button ID="btnNovoCliente" Text="Novo Cliente" runat="server" OnClick="btnNovoCliente_Click" />
+        <asp:Button ID="btnEditar" Text="Editar" runat="server" OnClick="btnEditar_Click" />
         <asp:Table ID="myTable" runat="server" Width="100%"> 
             <asp:TableRow>
                 <asp:TableCell>Nome</asp:TableCell>
