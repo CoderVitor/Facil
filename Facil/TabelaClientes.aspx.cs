@@ -58,7 +58,7 @@ namespace Facil
         }
         protected void btnNovoCliente_Click(object sender, EventArgs e)
         {
-            Response.Redirect("About.aspx");
+            Response.Redirect("EditCliente.aspx");
         }
     }
 }

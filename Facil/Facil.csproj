@@ -107,7 +107,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="Content\TabelaClientes.css" />
+    <Content Include="EditCliente.aspx" />
     <None Include="Connected Services\ClienteServiceReference\Cliente_Service.disco" />
     <None Include="Connected Services\ClienteServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\ClienteServiceReference\configuration.svcinfo" />
@@ -183,12 +184,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="EditCliente.aspx.cs">
+      <DependentUpon>EditCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="EditCliente.aspx.designer.cs">
+      <DependentUpon>EditCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Connected Services\ClienteServiceReference\Reference.cs">
