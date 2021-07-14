@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="Content/TabelaClientes.css" />
         <h1>Tabela de Clientes</h1>
     <div>
-        <asp:Button ID="btnNovoCliente" Text="Novo Cliente" CssClass="btnCliente" runat="server" OnClick="btnNovoCliente_Click"/>
         <span id="MsgVazio" style="color:red;" runat="server" visible="false" class="msgVazio">Não há registros</span>
         <asp:GridView ID="ClienteGridView" CssClass="grdCliente" runat="server" ShowHeaderWhenEmpty="true" AutoGenerateColumns="False"
             AutoPostBack="true"
@@ -78,7 +77,8 @@
             <EmptyDataTemplate>
                 <div align="center">Nenhum registro encontrado.</div>
             </EmptyDataTemplate>
-        </asp:GridView> 
+        </asp:GridView>
+        <asp:Button ID="btnNovoCliente" Text="Novo Cliente" CssClass="btnCliente" runat="server" OnClick="btnNovoCliente_Click"/>
     </div>
 
 </asp:Content>

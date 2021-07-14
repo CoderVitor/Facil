@@ -1,6 +1,8 @@
 ﻿body {
     background-color: dodgerblue;
-    background-image: linear-gradient(to right, dodgerblue, aqua);
+    background-image: linear-gradient(to bottom, dodgerblue, white, white);
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
@@ -22,4 +24,6 @@ h1 {
     border: none;
     border-radius: 30px;
     margin-top: 70px;
+    background-color:dodgerblue;
+    color:white;
 }
