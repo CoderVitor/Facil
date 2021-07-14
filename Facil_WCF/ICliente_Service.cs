@@ -22,9 +22,9 @@ namespace Facil_WCF
         void InserirCliente(string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente);
 
         [OperationContract]
-        void RemoverCliente(int idCliente, int idTipoCliente, int idSituacaoCliente);
+        void RemoverCliente(int idCliente);
 
         [OperationContract]
-        string AlterarCliente(int idCliente, string nome, string cpf, string sexo);
+        string AlterarCliente(int idCliente, string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente);
     }
 }

@@ -31,15 +31,15 @@ namespace Facil_WCF
         }
 
         //Excluir um cliente pelo Id.
-        public void RemoverCliente(int idCliente, int idTipoCliente, int idSituacaoCliente)
+        public void RemoverCliente(int idCliente)
         {
-            clienteRepository.RemoverCliente(idCliente, idTipoCliente, idSituacaoCliente);
+            clienteRepository.RemoverCliente(idCliente);
         }
 
         //Alterar um cliente pelo Id.
-        public string AlterarCliente(int idCliente, string nome, string cpf, string sexo)
+        public string AlterarCliente(int idCliente, string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente)
         {
-            return clienteRepository.AlterarCliente(idCliente, nome, cpf, sexo);
+            return clienteRepository.AlterarCliente(idCliente, nome, cpf, idTipoCliente, sexo, idSituacaoCliente);
         }
     }
 }

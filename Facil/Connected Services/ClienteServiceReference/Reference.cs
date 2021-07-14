@@ -161,16 +161,16 @@ namespace Facil.ClienteServiceReference {
         System.Threading.Tasks.Task InserirClienteAsync(string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICliente_Service/RemoverCliente", ReplyAction="http://tempuri.org/ICliente_Service/RemoverClienteResponse")]
-        void RemoverCliente(int idCliente, int idTipoCliente, int idSituacaoCliente);
+        void RemoverCliente(int idCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICliente_Service/RemoverCliente", ReplyAction="http://tempuri.org/ICliente_Service/RemoverClienteResponse")]
-        System.Threading.Tasks.Task RemoverClienteAsync(int idCliente, int idTipoCliente, int idSituacaoCliente);
+        System.Threading.Tasks.Task RemoverClienteAsync(int idCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICliente_Service/AlterarCliente", ReplyAction="http://tempuri.org/ICliente_Service/AlterarClienteResponse")]
-        string AlterarCliente(int idCliente, string nome, string cpf, string sexo);
+        string AlterarCliente(int idCliente, string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICliente_Service/AlterarCliente", ReplyAction="http://tempuri.org/ICliente_Service/AlterarClienteResponse")]
-        System.Threading.Tasks.Task<string> AlterarClienteAsync(int idCliente, string nome, string cpf, string sexo);
+        System.Threading.Tasks.Task<string> AlterarClienteAsync(int idCliente, string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -224,20 +224,20 @@ namespace Facil.ClienteServiceReference {
             return base.Channel.InserirClienteAsync(nome, cpf, idTipoCliente, sexo, idSituacaoCliente);
         }
         
-        public void RemoverCliente(int idCliente, int idTipoCliente, int idSituacaoCliente) {
-            base.Channel.RemoverCliente(idCliente, idTipoCliente, idSituacaoCliente);
+        public void RemoverCliente(int idCliente) {
+            base.Channel.RemoverCliente(idCliente);
         }
         
-        public System.Threading.Tasks.Task RemoverClienteAsync(int idCliente, int idTipoCliente, int idSituacaoCliente) {
-            return base.Channel.RemoverClienteAsync(idCliente, idTipoCliente, idSituacaoCliente);
+        public System.Threading.Tasks.Task RemoverClienteAsync(int idCliente) {
+            return base.Channel.RemoverClienteAsync(idCliente);
         }
         
-        public string AlterarCliente(int idCliente, string nome, string cpf, string sexo) {
-            return base.Channel.AlterarCliente(idCliente, nome, cpf, sexo);
+        public string AlterarCliente(int idCliente, string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente) {
+            return base.Channel.AlterarCliente(idCliente, nome, cpf, idTipoCliente, sexo, idSituacaoCliente);
         }
         
-        public System.Threading.Tasks.Task<string> AlterarClienteAsync(int idCliente, string nome, string cpf, string sexo) {
-            return base.Channel.AlterarClienteAsync(idCliente, nome, cpf, sexo);
+        public System.Threading.Tasks.Task<string> AlterarClienteAsync(int idCliente, string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente) {
+            return base.Channel.AlterarClienteAsync(idCliente, nome, cpf, idTipoCliente, sexo, idSituacaoCliente);
         }
     }
 }

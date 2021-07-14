@@ -18,3 +18,23 @@ C:\Users\vssav\source\repos\Facil\Facil_Repository\obj\Debug\Facil_Repository.cs
 C:\Users\vssav\source\repos\Facil\Facil_Repository\obj\Debug\Facil_Repository.csproj.CopyComplete
 C:\Users\vssav\source\repos\Facil\Facil_Repository\obj\Debug\Facil_Repository.exe
 C:\Users\vssav\source\repos\Facil\Facil_Repository\obj\Debug\Facil_Repository.pdb
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\obj\Debug\Facil_Repository.csproj.CoreCompileInputs.cache
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Facil_Repository.exe.config
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Facil_Repository.exe
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Facil_Repository.pdb
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Dapper.dll
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Facil.dll
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\System.Web.Optimization.dll
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Facil.pdb
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Facil.dll.config
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Dapper.xml
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\System.Web.Optimization.xml
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\pt-br\System.Web.Optimization.resources.dll
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\bin\Debug\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\obj\Debug\Facil_Repository.csproj.AssemblyReference.cache
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\obj\Debug\Facil_Repository.csproj.CopyComplete
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\obj\Debug\Facil_Repository.exe
+C:\Users\vssav\OneDrive\Área de Trabalho\projeto\trunk\Facil_Repository\obj\Debug\Facil_Repository.pdb

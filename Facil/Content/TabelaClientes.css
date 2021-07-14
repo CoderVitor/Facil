@@ -1,3 +1,53 @@
-﻿td {
+﻿body {
+    background-color: dodgerblue;
+    background-image: linear-gradient(to right, dodgerblue, aqua);
+}
+h1{
+    text-align: center;
+    font-size:100px
+}
+td {
     padding: 5px;
+    text-align: center;
+}
+th {
+    padding: 5px;
+    text-align: center;
+}
+.grdCliente {
+    background:center;
+    margin: 0 auto;
+}
+
+.msgVazio{
+    font-size:30px;
+}
+
+.btnCliente {
+    display: block;
+    margin: 70px auto 80px auto;
+    height: 50px;
+    width: 600px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 70px;
+}
+
+.campo-transp{
+    background: transparent;
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #001F3F;
+    }
+
+    50% {
+        background-color: #FF4136;
+    }
+
+    100% {
+        background-color: #001F3F;
+    }
 }

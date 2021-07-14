@@ -47,8 +47,6 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="idCliente" type="xs:int" />
-        <xs:element minOccurs="0" name="idTipoCliente" type="xs:int" />
-        <xs:element minOccurs="0" name="idSituacaoCliente" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -63,7 +61,9 @@
         <xs:element minOccurs="0" name="idCliente" type="xs:int" />
         <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="cpf" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idTipoCliente" type="xs:int" />
         <xs:element minOccurs="0" name="sexo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSituacaoCliente" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

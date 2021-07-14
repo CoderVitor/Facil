@@ -55,25 +55,23 @@ namespace Facil_Repository.Repository
 
             }
         }
-        public void RemoverCliente(int idCliente, int idTipoCliente, int idSituacaoCliente)
+        public void RemoverCliente(int idCliente)
         {
-            var sql = @"EXEC Clientes_Delete @IdCliente, @IdTipoCliente, @IdSituacaoCliente";
+            var sql = @"EXEC Clientes_Delete @IdCliente";
 
             using (var conn = Connection)
             {
                 conn.Query(sql, new
                 {
-                    IdCliente = idCliente,
-                    IdTipoCliente = idTipoCliente,
-                    IdSituacaoCliente = idSituacaoCliente
+                    IdCliente = idCliente
                 });
             }
         }
-        public string AlterarCliente(int idCliente, string nome, string cpf, string sexo)
+        public string AlterarCliente(int idCliente, string nome, string cpf,  int idTipoCliente, string sexo, int idSituacaoCliente)
         {
             try
             {
-                var sql = @"EXEC Clientes_Update @IdCliente, @Nome, @CPF, @Sexo";
+                var sql = @"EXEC Clientes_Update @IdCliente, @Nome, @CPF, @IdTipoCliente, @Sexo, @IdSituacaoCliente";
 
                 using (var conn = Connection)
                 {
@@ -82,13 +80,15 @@ namespace Facil_Repository.Repository
                         IdCliente = idCliente,
                         Nome = nome,
                         CPF = cpf,
-                        Sexo = sexo
+                        IdTipoCliente = idTipoCliente,
+                        Sexo = sexo,
+                        IdSituacaoCliente = idSituacaoCliente
                     });
                 }
 
                 return "Cliente alterado com Sucesso.";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return "Erro ao alterar o cliente, preencha todos os campos.";
             }

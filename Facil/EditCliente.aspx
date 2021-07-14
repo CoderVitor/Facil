@@ -1,12 +1,9 @@
 ﻿<%@ Page Title="EditCliente" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditCliente.aspx.cs" Inherits="Facil.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="lblOpcaoCliente" runat="server">Deseja editar qual cliente?</asp:Label>
-        <asp:DropDownList ID="DropDownList1" runat="server">
-            <asp:ListItem Text="Ativo" Value="1"/>
-            <asp:ListItem Text="Inativo" Value="2"/>
-        </asp:DropDownList>
-    <form>
+    <h1>Novo Cliente</h1>
+    <link rel="stylesheet" href="Content/EditCliente.css" />
+    <div class="novoCliente">
       <asp:Label ID="lblNome" runat="server">Nome:</asp:Label>
       <asp:TextBox ID="txNome" runat="server"></asp:TextBox>
         <asp:Label ID="lblCpf" runat="server">CPF/CNPJ:</asp:Label>
@@ -26,6 +23,6 @@
             <asp:ListItem Text="Ativo" Value="1"/>
             <asp:ListItem Text="Inativo" Value="2"/>
         </asp:DropDownList>
-    </form>
-    <asp:Button ID="btnSalvar" Text="Salvar" runat="server" OnClick="btnSalvar_Click"/>
+    </div>
+    <asp:Button ID="btnSalvar" CssClass="btnSalvar" Text="Salvar" runat="server" OnClick="btnSalvar_Click"/>
 </asp:Content>

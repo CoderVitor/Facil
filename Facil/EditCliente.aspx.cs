@@ -33,13 +33,9 @@ namespace Facil
                 situacaoCliente = Convert.ToInt32(ddlSituacaoCliente.SelectedValue);
             }
 
-            try
+            if(!String.IsNullOrEmpty(nome) && !String.IsNullOrEmpty(cpf))
             {
                 new ClienteServiceReference.Cliente_ServiceClient().InserirCliente(nome, cpf, tipoCliente, sexo, situacaoCliente);
-            }
-            catch (Exception ex)
-            {
-
             }
 
             Response.Redirect("TabelaClientes.aspx");

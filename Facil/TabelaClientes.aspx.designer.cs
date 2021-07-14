@@ -24,21 +24,21 @@ namespace Facil
         protected global::System.Web.UI.WebControls.Button btnNovoCliente;
 
         /// <summary>
-        /// Controle btnEditar.
+        /// Controle MsgVazio.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditar;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MsgVazio;
 
         /// <summary>
-        /// Controle myTable.
+        /// Controle ClienteGridView.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table myTable;
+        protected global::System.Web.UI.WebControls.GridView ClienteGridView;
     }
 }

@@ -1,0 +1,25 @@
+﻿body {
+    background-color: dodgerblue;
+    background-image: linear-gradient(to right, dodgerblue, aqua);
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px
+}
+
+.novoCliente{
+    margin: 20% auto 20% auto;
+    text-align:center;
+}
+
+.btnSalvar {
+    display: block;
+    margin: 70px auto 80px auto;
+    height: 50px;
+    width: 600px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 70px;
+}
