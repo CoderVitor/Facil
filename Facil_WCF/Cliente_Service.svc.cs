@@ -9,8 +9,6 @@ using System.Text;
 
 namespace Facil_WCF
 {
-    // OBSERVAÇÃO: Você pode usar o comando "Renomear" no menu "Refatorar" para alterar o nome da classe "Cliente_Service" no arquivo de código, svc e configuração ao mesmo tempo.
-    // OBSERVAÇÃO: Para iniciar o cliente de teste do WCF para testar esse serviço, selecione Cliente_Service.svc ou Cliente_Service.svc.cs no Gerenciador de Soluções e inicie a depuração.
     public class Cliente_Service : ICliente_Service
     {
         ClienteRepository clienteRepository = new ClienteRepository();
@@ -24,19 +22,16 @@ namespace Facil_WCF
             return clienteRepository.BuscarCliente(nome);
         }
 
-        //Inserir novo cliente com um endereço e um telefone.
         public void InserirCliente(string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente)
         {
             clienteRepository.InserirCliente(nome, cpf, idTipoCliente, sexo, idSituacaoCliente);
         }
 
-        //Excluir um cliente pelo Id.
         public void RemoverCliente(int idCliente)
         {
             clienteRepository.RemoverCliente(idCliente);
         }
 
-        //Alterar um cliente pelo Id.
         public string AlterarCliente(int idCliente, string nome, string cpf, int idTipoCliente, string sexo, int idSituacaoCliente)
         {
             return clienteRepository.AlterarCliente(idCliente, nome, cpf, idTipoCliente, sexo, idSituacaoCliente);

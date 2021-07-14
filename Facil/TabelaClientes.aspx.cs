@@ -20,7 +20,7 @@ namespace Facil
         public void ListarClientes()
         {
             var result = new ClienteServiceReference.Cliente_ServiceClient().ListarClientes();
-            var model = result.Select(a => new Objetos.Clientes
+            var lista = result.Select(a => new Objetos.Clientes
             {
                 IdCliente = a.IdCliente,
                 Nome = a.Nome,
@@ -30,10 +30,10 @@ namespace Facil
                 IdSituacaoCliente = a.IdSituacaoCliente
             }).ToList();
 
-            if (model.Count != 0)
+            if (lista.Count != 0)
             {
                 MsgVazio.Visible = false;
-                preencheGrid(model);
+                PreencheGrid(lista);
             }
             else
             {
@@ -41,7 +41,7 @@ namespace Facil
             }
         }
 
-        public void preencheGrid(List<Objetos.Clientes> lista)
+        public void PreencheGrid(List<Objetos.Clientes> lista)
         {
             ClienteGridView.DataSource = lista;
             ClienteGridView.DataBind();
@@ -67,7 +67,6 @@ namespace Facil
             int idSituacaoCliente = Convert.ToInt32(((DropDownList)ClienteGridView.Rows[e.RowIndex].FindControl("ddlEditSituacaoCliente")).SelectedValue);
             string result = new ClienteServiceReference.Cliente_ServiceClient().AlterarCliente(idCliente, nome, cpf, idTipoCliente, sexo, idSituacaoCliente);
             ClienteGridView.EditIndex = -1;
-            //preenche o grid nomvanete
             ListarClientes();
         }
         protected void ClienteGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
